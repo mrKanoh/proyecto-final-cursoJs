@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+
+:root {
+    --color-one: hsl(0, 0%, 83%);
+    --color-two: hsl(0, 0%, 16%);
+    --color-background: hsl(0, 0%, 10%);
+    --gap: 5rem;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-background);
+}
+
+.logo {
+    width: 7rem;
+    filter:  invert(85%) sepia(0%) saturate(2%) hue-rotate(71deg) brightness(98%) contrast(100%);
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    background-color: var(--color-two);
+}
+
+.ham {
+    display: none;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.ham span {
+    display: block;
+    background-color: var(--color-one);
+    height: .2rem;
+    width: 2.8rem;
+    margin: .8rem auto;
+    border-radius: .2rem;
+}
+
+.enlaces__menu {
+    display: flex;
+    padding: 0;
+}
+
+.enlaces__menu li {
+    padding: 0 4rem;
+    list-style-type: none;
+    transition: .2s;
+}
+
+.enlaces__menu li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--color-one);
+    font-weight: 600;
+}
+
+/* Dispositivos moviles */
+@media (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+
+    .logo {
+        padding-left: 2.7rem;
+    }
+
+    .ham {
+        display: block;
+        position: absolute;
+        top: 6.5%;
+        right: 7%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2.5rem 0;
+    }
+
+    .enlaces__menu {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        height: 92vh;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        opacity: 0;
+        display: none;
+    }
+
+    .enlaces__menu li {
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+@keyframes muestraMenu {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.enlaces__menu.activado {
+    display: flex;
+    animation: muestraMenu 350ms ease-in-out both;
+}
+
+.br1.animado {
+    transform: rotate(-45deg) translate(-6px, 1px);
+    transition: .4s;
+}
+
+.br2.animado {
+    transform: rotate(45deg) translate(-6px, -1px);
+    transition: .4s;
+}
+
+.br1 {
+    transform: rotate(0deg) translate(0);
+    transition: .4s;
+}
+
+.br2 {
+    transform: rotate(0deg) translate(0);
+    transition: .4s;
+}
