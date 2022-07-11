@@ -1,0 +1,74 @@
+[
+    {
+        "precio": 15,
+        "id": 1,
+        "title": "Starman t-shirt",
+        "imagenItem": "img/shirt_1.webp"
+    },
+    {
+        "precio": 15,
+        "id": 2,
+        "title": "Occupy mars t-shirt",
+        "imagenItem": "img/shirt_5.webp"
+    },
+    {
+        "precio": 50,
+        "id": 3,
+        "title": "Starship pullover hoodie",
+        "imagenItem": "img/hoodie_4.webp"
+    },
+    {
+        "precio": 50,
+        "id": 4,
+        "title": "F9 zipper hoodie",
+        "imagenItem": "img/hoodie_5.webp"
+    },
+    {
+        "precio": 120,
+        "id": 5,
+        "title": "Men's bomber jacket",
+        "imagenItem": "img/bomber_1.webp"
+    },
+    {
+        "precio": 120,
+        "id": 6,
+        "title": "Women's bomber jacket",
+        "imagenItem": "img/bomber_2.webp"
+    },
+    {
+        "precio": 45,
+        "id": 7,
+        "title": "Kid's SpaceX Spacesuit",
+        "imagenItem": "img/shirt_6.webp"
+    },
+    {
+        "precio": 15,
+        "id": 8,
+        "title": "SpaceX Onesie",
+        "imagenItem": "img/shirt_7.webp"
+    },
+    {
+        "precio": 75,
+        "id": 9,
+        "title": "SpaceX Backpackt",
+        "imagenItem": "img/other_1.webp"
+    },
+    {
+        "precio": 20,
+        "id": 10,
+        "title": "Occupy Mars Mug",
+        "imagenItem": "img/other_2.webp"
+    },
+    {
+        "precio": 30,
+        "id": 11,
+        "title": "Starship Poster Pack",
+        "imagenItem": "img/other_3.webp"
+    },
+    {
+        "precio": 35,
+        "id": 12,
+        "title": "SpaceX Water Bottle",
+        "imagenItem": "img/other_4.webp"
+    }
+]
